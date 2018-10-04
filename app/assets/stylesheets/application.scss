@@ -2,7 +2,7 @@
 
 $gray-darker:           #33373a;
 $gray:                  #3D4245;
-$gray-light:            #99a0a2;   
+$gray-light:            #99a0a2;
 
 $brand-primary:         $gray;
 $btn-primary-color:     #ccc;
@@ -30,3 +30,10 @@ $navbar-inverse-link-active-bg:            $body-bg;
 @import "expenses";
 
 .navbar-inverse { border: 0; }
+
+#Salir{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: #1F1B1C;
+}

@@ -1,8 +1,9 @@
 class ExpensesController < ApplicationController
 
+  before_action :authenticate_user!
+
   def index
-    Rails.logger.info(params.inspect)
-    @expenses = Expense.order("date DESC")
+    @expenses = current_user.expenses.order("date DESC")
     if params[:concept].present?
       @expenses = @expenses.where("concept LIKE ? ", "%#{params[:concept]}%")
     end
